@@ -9,6 +9,9 @@ const cookieSelectors = [
   '[id*="banner"]', // Matches elements with 'banner' in their ID
   '[class*="banner"]', // Matches elements with 'banner' in their class
   '[class*="fc-consent-root"]', // Matches elements with 'fc-consent-root' in their class
+  '[class*="fc-dialog"]', // Matches elements with 'fc-dialog' in their class
+  '[class*="fc-dialog"]', // Matches elements with 'fc-dialog' in their class
+  '[class*="fc-choice"]', // Matches elements with 'fc-choice' in their class
 ];
 
 // Function to hide cookie banners
@@ -16,7 +19,7 @@ function hideCookieBanners() {
   cookieSelectors.forEach((selector) => {
     const elements = document.querySelectorAll(selector);
     elements.forEach((element) => {
-      element.style.display = "none"; // Hides the element
+      element.style.display = "none !important"; // Hides the element
       console.log("Hid element:", element);
     });
   });
