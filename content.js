@@ -8,6 +8,7 @@ const cookieSelectors = [
   '[class*="consent"]', // Matches elements with 'consent' in their class
   '[id*="banner"]', // Matches elements with 'banner' in their ID
   '[class*="banner"]', // Matches elements with 'banner' in their class
+  '[class*="fc-consent-root"]', // Matches elements with 'fc-consent-root' in their class
 ];
 
 // Function to hide cookie banners
