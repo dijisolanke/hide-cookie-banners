@@ -19,7 +19,7 @@ function hideCookieBanners() {
   cookieSelectors.forEach((selector) => {
     const elements = document.querySelectorAll(selector);
     elements.forEach((element) => {
-      element.style.display = "none !important"; // Hides the element
+      element.style.display = "none!important"; // Hides the element
       console.log("Hid element:", element);
     });
   });
